@@ -1,0 +1,4 @@
+........x..........                                                      [100%]
+=========================== short test summary info ============================
+XFAIL tests/unit/test_output_parser.py::TestOutputParser::test_json_array_fallback - issue #69 (manifest H-02): output parser calls .items() on a JSON array fallback
+18 passed, 1 xfailed in 0.07s

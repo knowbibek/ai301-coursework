@@ -1,0 +1,15 @@
+CASE: object control
+INPUT: {"skills": "Python"}
+2026-10-26 01:56:31 [info     ] json_output_parsed             section_count=1
+RESULT: 1 feedback section(s)
+CASE: raw array
+INPUT: ["First feedback item", "Second feedback item"]
+Traceback (most recent call last):
+  File "/Users/biz/Documents/Codex/2026-10-26/so-i-have-opened-up-safari/work/pathreview-fork/../reproduce_parser.py", line 14, in <module>
+    result = parse_review_output(raw)
+  File "/Users/biz/Documents/Codex/2026-10-26/so-i-have-opened-up-safari/work/pathreview-fork/rag/generator/output_parser.py", line 48, in parse_review_output
+    return _parse_json_output(data)
+  File "/Users/biz/Documents/Codex/2026-10-26/so-i-have-opened-up-safari/work/pathreview-fork/rag/generator/output_parser.py", line 68, in _parse_json_output
+    for key, value in data.items():
+                      ^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
